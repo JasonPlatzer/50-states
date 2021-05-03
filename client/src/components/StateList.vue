@@ -37,7 +37,7 @@ export default {
     },
     methods: {
         fetchAllStates() {
-            this.$StateService.getAllStates().then(states => {
+            this.$stateService.getAllStates().then(states => {
                 // sets states list above to whatever json is returned
                 this.states = states
             }).catch( err =>{
