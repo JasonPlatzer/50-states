@@ -8,10 +8,10 @@
 
 </div>
 <div>
-    <!-- links to map depending on state generates url-->
+    <!-- links to map depending on state generates url -->
     <router-link v-bind:to=" {name: 'StateMap', params: {state: state.name} }">
-        <img class="map-icon" src="@/assets/map_icon.png">
-    </router-link>
+         <img class="map-icon" src="@/assets/map_icon.png">  
+     </router-link>
 
 </div>
 

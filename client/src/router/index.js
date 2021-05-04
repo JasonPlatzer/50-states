@@ -3,7 +3,7 @@ import StateList from '@/components/StateList'
 import AboutSite from '@/components/AboutSite'
 import StateMap from '@/components/StateMap'
 // creates a router object to handle paths to url components
-export default createRouter({
+export default createRouter( {
     history: createWebHashHistory(),
     routes: [
         {
@@ -13,14 +13,16 @@ export default createRouter({
           component: StateList
 
         },
+        // path to about site page
         {
             path: '/about',
             name: 'AboutSite',
             component: AboutSite
         },
         {
+            // path to map of state required to display
             path: '/map/:state',
-            name: 'Statemap',
+            name: 'StateMap',
             component: StateMap
         }
 

@@ -16,9 +16,10 @@ export default {
     },
     computed: {
        totalVisited(){
+           // updates state visited count
           let visitedCount = 0
           this.states.forEach(state => {
-              if (state.visted){
+              if (state.visited){
                   visitedCount ++
               }
               

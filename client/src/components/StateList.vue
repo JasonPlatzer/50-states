@@ -46,6 +46,7 @@ export default {
             })
         },
         updateVisited(stateName, visited) {
+            //updates visited status
             this.$stateService.setVisited(stateName, visited).then( () => {
                 this.fetchAllStates()
             }).catch(err => {

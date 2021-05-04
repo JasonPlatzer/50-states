@@ -62,7 +62,7 @@ export default {
             this.mapReady = true
         },
         setMapView(){
-            // checks to see if data is ready to configure map to display
+            // checks to see if data is ready to configure map to display mapReady and dataReady must be true to display map
             if (this.mapReady && this.dataReady){
                 this.$refs.map.leafletObject.setView(this.mapCenter, this.zoom)
             }
@@ -80,7 +80,7 @@ export default {
 </script>
 
 <style scoped>
-#map-containet{
+#map-container{
     height: 30rem;
 }
 
